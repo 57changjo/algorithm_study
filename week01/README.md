@@ -9,7 +9,7 @@
 ## 📂 다룬 문제
 1. [백준 2606 - 바이러스](https://www.acmicpc.net/problem/2606)
 2. [백준 11724 - 연결 요소의 개수](https://www.acmicpc.net/problem/11724)
-3. [백준 1012 - 유기농배추](https://www.acmicpc.net/problem/1012)
+3. [백준 3273 - 두 수의 합](https://www.acmicpc.net/problem/3273)
 
 ---
 
