@@ -48,6 +48,7 @@
 ## ✅ 다음주 문제 출제자: 홍시은
 - 다음 주 주제: 
 - 문제 번호 및 링크:
-1. [백준 1012 - 유기농 배](https://www.acmicpc.net/problem/1012)
-2. [백준 12851 - 숨바꼭질 2](https://www.acmicpc.net/problem/12851)
-3. [백준 14226 - 이모티콘](https://www.acmicpc.net/problem/14226)
+1. [백준 1012 - 유기농 배추](https://www.acmicpc.net/problem/1012)
+2. [백준 2178 - 미로 탐색](https://www.acmicpc.net/problem/2178)
+3. [백준 12851 - 숨바꼭질 2](https://www.acmicpc.net/problem/12851)
+4. [백준 2206 - 벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)
