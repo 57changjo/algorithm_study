@@ -51,4 +51,3 @@
 1. [백준 1012 - 유기농 배추](https://www.acmicpc.net/problem/1012)
 2. [백준 2178 - 미로 탐색](https://www.acmicpc.net/problem/2178)
 3. [백준 12851 - 숨바꼭질 2](https://www.acmicpc.net/problem/12851)
-4. [백준 2206 - 벽 부수고 이동하기](https://www.acmicpc.net/problem/2206)
