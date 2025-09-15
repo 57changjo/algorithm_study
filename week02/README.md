@@ -48,6 +48,6 @@
 ## ✅ 다음주 문제 출제자: 최현준
 - 다음 주 주제: BFS, 재귀, 이진탐색
 - 문제 번호 및 링크:
-  1. 문제 1: [정올 #1161 - 하노이1]([https://jungol.co.kr/problem/1161?cursor=Niw3LDU=])
-  2. 문제 2: [백준 #7795 - 먹을 것인가 먹힐 것인가]([https://www.acmicpc.net/problem/7795])
-  3. 문제 3: [정올 #1082 - 화염에서탈출(SLIKAR)]([https://jungol.co.kr/problem/1082?cursor=OCw3LDU=])
+  1. 문제 1: [정올 #1161 - 하노이1](https://jungol.co.kr/problem/1161?cursor=Niw3LDU=)
+  2. 문제 2: [백준 #7795 - 먹을 것인가 먹힐 것인가](https://www.acmicpc.net/problem/7795)
+  3. 문제 3: [정올 #1082 - 화염에서탈출(SLIKAR)](https://jungol.co.kr/problem/1082?cursor=OCw3LDU=)
