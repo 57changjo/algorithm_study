@@ -1,0 +1,85 @@
+// 1. 유기농 배추
+#if 0
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#define MAX_K (2500+2)
+#define MAX_MN 50
+
+int T;
+int M, N, K;
+int map[MAX_K][MAX_K];
+int dr[4] = { -1, 1, 0, 0 };
+int dc[4] = { 0, 0, -1, 1 };
+
+typedef struct _node {
+	int r;
+	int c;
+}Node_t;
+Node_t Queue[MAX_MN * MAX_MN];
+int front, rear;
+
+void inputData(void) {
+	//map 초기화
+	for (int i = 1; i <= N; ++i) {
+		for (int j = 1; j <= M; ++j) {
+			map[i][j] = 0;
+		}
+	}
+	(void)scanf("%d %d %d", &M, &N, &K);
+	for (int i = 1; i <= K; ++i) {
+		int u = 0, v = 0;
+		(void)scanf("%d %d", &v, &u);
+		map[u+1][v+1] = 1; // map idx 1부터 사용하니까, 입력 좌표에 1씩 더함
+	}
+}
+
+void BFS(int sr, int sc) {
+	Node_t curr = { 0 };
+	front = rear = 0;
+
+	Queue[rear++] = (Node_t){ sr, sc };
+	map[sr][sc] = 2; // map에 방문표시 -> 다시 map 돌며 시작점 찾을 때, 방문한 곳 다시 방문하지 않게
+
+	while (front != rear) {
+		curr = Queue[front++];
+		for (int i = 0; i < 4; ++i) {
+			int nr = curr.r + dr[i];
+			int nc = curr.c + dc[i];
+			if (map[nr][nc] == 1) {
+				Queue[rear++] = (Node_t){ nr, nc };
+				map[nr][nc] = 2;
+			}
+		}
+	}
+}
+void printData(void) {
+	for (int i = 1; i <= N; ++i) {
+		for (int j = 1; j <= M; ++j) {
+			printf("%d", map[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+int main(void) {
+	//(void)freopen("b1012.txt", "r", stdin);
+	(void)scanf("%d", &T);
+	while (T--) {
+		int cnt = 0;
+		inputData();
+		//printData();
+		for (int i = 1; i <= N; ++i) {
+			for (int j = 1; j <= M; ++j) {
+				if (map[i][j] != 1) continue;
+				BFS(i, j);
+				cnt++;
+			}
+		}
+		printf("%d\n", cnt);
+	}
+	return 0;
+}
+
+#endif
