@@ -1,4 +1,5 @@
 #include <stdio.h>
+// to del
 int main(void) {
     int n, x;
     int count;
