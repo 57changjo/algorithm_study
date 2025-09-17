@@ -1,15 +1,15 @@
-# 📆 Week 2 스터디 정리
+# 📆 Week 3 스터디 정리
 
 ## 📌 주제
-- 이번 주 주제: BFS
-- 출제자: 홍시은
+- 이번 주 주제: 이진탐색, BFS, 재귀
+- 출제자: 최현준
 
 ---
 
 ## 📂 다룬 문제
-1. [백준 1012 - 유기농 배추](https://www.acmicpc.net/problem/1012)
-2. [백준 2178 - 미로 탐색](https://www.acmicpc.net/problem/2178)
-3. [백준 12851 - 숨바꼭질 2](https://www.acmicpc.net/problem/12851)
+1. [정올 #1161 - 하노이1](https://jungol.co.kr/problem/1161?cursor=Niw3LDU=)
+2. [백준 #7795 - 먹을 것인가 먹힐 것인가](https://www.acmicpc.net/problem/7795)
+3. [정올 #1082 - 화염에서탈출(SLIKAR)](https://jungol.co.kr/problem/1082?cursor=OCw3LDU=)
 
 ---
 
@@ -48,6 +48,6 @@
 ## ✅ 다음주 문제 출제자: 최현준
 - 다음 주 주제: BFS, 재귀, 이진탐색
 - 문제 번호 및 링크:
-  1. 문제 1: [정올 #1161 - 하노이1](https://jungol.co.kr/problem/1161?cursor=Niw3LDU=)
-  2. 문제 2: [백준 #7795 - 먹을 것인가 먹힐 것인가](https://www.acmicpc.net/problem/7795)
-  3. 문제 3: [정올 #1082 - 화염에서탈출(SLIKAR)](https://jungol.co.kr/problem/1082?cursor=OCw3LDU=)
+  1. 문제 1: 
+  2. 문제 2: 
+  3. 문제 3: 
