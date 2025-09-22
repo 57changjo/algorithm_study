@@ -53,6 +53,7 @@
 ## ✅ 다음주 문제 출제자: 최현준
 - 다음 주 주제: BFS, 재귀, 이진탐색
 - 문제 번호 및 링크:
-  1. 문제 1: 
-  2. 문제 2: 
-  3. 문제 3: 
+  1. 문제 1: [백준 2805 - 나무 자르기](https://www.acmicpc.net/problem/2805)
+  2. 문제 2: [백준 4179 - 불!](https://www.acmicpc.net/problem/4179)
+  3. 문제 3:[정올 1824 - 스도쿠](https://jungol.co.kr/problem/1824?cursor=OCw1LDU=)
+
