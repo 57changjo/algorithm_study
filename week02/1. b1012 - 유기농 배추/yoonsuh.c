@@ -9,7 +9,7 @@
 int T, M, N, K;
 int field[MAX][MAX];
 int visited[MAX][MAX];
-
+// hi
 typedef struct {
     int r, c;
 } node_t;
