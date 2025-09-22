@@ -7,9 +7,9 @@
 ---
 
 ## 📂 다룬 문제
-1. [백준 2805 - 나무 자르기]((https://www.acmicpc.net/problem/2805))
-2. [백준 4179 - 불!]((https://www.acmicpc.net/problem/4179))
-3. [정올 1824 - 스도쿠]((https://jungol.co.kr/problem/1824?cursor=OCw1LDU=))
+1. [백준 2805 - 나무 자르기](https://www.acmicpc.net/problem/2805)
+2. [백준 4179 - 불!](https://www.acmicpc.net/problem/4179)
+3. [정올 1824 - 스도쿠](https://jungol.co.kr/problem/1824?cursor=OCw1LDU=)
 
 ---
 
