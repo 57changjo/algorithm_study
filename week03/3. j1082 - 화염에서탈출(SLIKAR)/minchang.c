@@ -1,4 +1,3 @@
-
 #if 1
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -13,8 +12,8 @@ typedef struct node_t {
 
 int R, C;
 char Map[MAX][MAX + 1];
-int fireT[MAX][MAX];
-int arrivedTime[MAX][MAX];
+int  fireT[MAX][MAX];
+int  arrivedTime[MAX][MAX];
 
 int sr, sc;
 int hr, hc;
@@ -26,10 +25,10 @@ int inBounds(int r, int c) {
 }
 
 void inputData(void) {
-    scanf("%d %d", &R, &C);
+    (void)scanf("%d %d", &R, &C);
 
     for (int i = 0; i < R; i++) {
-        scanf("%s", Map[i]);
+        (void)scanf("%s", Map[i]);
         for (int j = 0; j < C; j++) {
             fireT[i][j] = INT_MAX;
             arrivedTime[i][j] = INT_MAX;
