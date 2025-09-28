@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-/*
+// 0928 minchang makes PR
+/* 
 
 예제 입력 규칙
 
