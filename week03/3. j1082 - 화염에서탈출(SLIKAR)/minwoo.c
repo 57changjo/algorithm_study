@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #define SIZE 52
-
+// 0928 minchang makes PR
 char map[SIZE][SIZE];
 char input[SIZE];
 int R, C;
