@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 #define MAX 20002
-
+// 0928 minchang makes PR
 int T;
 int A_count, B_count;
 int A_temp, B_temp;
