@@ -77,10 +77,10 @@ void findx2farnodedist(int node, int dist) {
 }
 
 void printResult(void) {
-    (void)printf("%d\n", x2root);
-    (void)printf("%d\n", numofchild);
-    (void)printf("%d\n", x2cdist);
-    (void)printf("%d\n", x2farnodedist);
+    printf("%d\n", x2root);
+    printf("%d\n", numofchild);
+    printf("%d\n", x2cdist);
+    printf("%d\n", x2farnodedist);
 }
 
 int main(void) {
