@@ -1,4 +1,4 @@
-// GPT 사용함. 혼자서 못 풀겠음
+// **GPT의 도움을 받아 푼 문제**
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
