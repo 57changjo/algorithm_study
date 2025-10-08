@@ -1,3 +1,5 @@
+// **GPT의 도움을 받아 푼 문제**
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>
