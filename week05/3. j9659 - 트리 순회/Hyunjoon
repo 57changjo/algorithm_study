@@ -1,0 +1,101 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+
+#if 1
+
+#define MAX (1000)
+
+int N;
+int ary[MAX][2]; 
+int x;
+
+int cnt2 = 1;
+int cnt3, cnt4;
+int rootdis;
+
+void inputdata() {
+	(void)scanf("%d", &N);
+	for (int i = 0; i < N - 1; i++) {
+		(void)scanf("%d %d", &ary[i][0], &ary[i][1]);
+	}
+	(void)scanf("%d", &x);
+}
+
+int findroot(int cid) {
+	int cnt = 0;
+
+	while (cid != 1) {
+		for (int i = 0; i < N - 1; i++) {
+			if (ary[i][0] == cid) {
+				cid = ary[i][1];
+				cnt++;
+			}
+		}
+	}
+	return cnt;
+}
+
+void findcidcnt(int pid) {
+	for (int i = 0; i < N-1; ++i) {
+		if (ary[i][1] == pid) {
+			++cnt2;
+			//printf("%d %d\n", ary[i][0], cnt2);
+			findcidcnt(ary[i][0]);
+		}
+	}
+	return;
+}
+
+void findciddis(int L, int pid) {
+	for (int i = 0; i < N - 1; ++i) {
+		if (ary[i][1] == pid) {
+			findciddis(L+1, ary[i][0]);
+		}
+	}
+	if (L > cnt3) cnt3 = L;
+	return;
+}
+
+
+void findrootdis(int L, int pid, int c) {
+	for (int i = 0; i < N - 1; ++i) {
+		if (ary[i][1] == pid && ary[i][0] != c) {
+			findrootdis(L + 1, ary[i][0], c);
+		}
+	}
+	if (L > rootdis) rootdis = L;
+	return;
+}
+
+void finddis(int L, int b) {
+	for (int i = 0; i < N - 1; ++i) {
+		if (ary[i][0] == b) {
+			finddis(L + 1, ary[i][1]);
+			findrootdis(L + 1, ary[i][1], b);
+			break;
+		}
+	}
+	return;
+}
+
+int main(void) {
+	(void)freopen("prob3.txt", "r", stdin);
+	inputdata();
+	int cnt1 = findroot(x);
+
+	printf("%d\n",cnt1);
+	findcidcnt(x);
+	findciddis(0, x);
+	finddis(0, x);
+	printf("%d\n", cnt2);
+	printf("%d\n", cnt3);
+	///printf("%d\n", rootdis);
+	if (rootdis < cnt3) rootdis = cnt3;
+	printf("%d", rootdis);
+
+	return 0;
+}
+#endif
+
+
