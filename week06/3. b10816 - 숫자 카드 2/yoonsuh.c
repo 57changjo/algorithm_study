@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define OFFSET 10000000
-#define MAX 20000001  // -10,000,000 ~ 10,000,000 대응
+#define MAX 20000001  // -10,000,000 ~ 10,000,000 
 
 int countArr[MAX]; 
 int main() {
