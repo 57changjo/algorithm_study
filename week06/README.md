@@ -47,7 +47,7 @@
   - lower_bound: 찾고자 하는 index의 첫값
   - upper_bound: 찾고자 하는 index의 끝값
   - 각각의 함수에서 반환한 index의 차이를 구한다.
-  - hash table: 메모리를 줄이기 위해 offset을 사용하거나, 양수냐 음수냐에 따라 if else로 구
+  - hash table: 음수를 피하기 위해서 offset을 사용하거나, 양수냐 음수냐에 따라 음수이면 뒤집어버린다.
 - 리뷰 포인트:
   - if (ary[mid] >= x), if (ary[mid] > x) 와 같이 부등호 차이만으로 index의 첫값, 끝값을 구할 수 있다.
   - lower_bound에서 index의 첫값을 구하고 거기서 index를 ++하면서 index의 끝값을 구하는 방법이 선형탐색 방법 시간 초과난다.
