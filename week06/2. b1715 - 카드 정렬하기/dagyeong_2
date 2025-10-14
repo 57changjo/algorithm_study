@@ -1,0 +1,39 @@
+//시간초과
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#define MAX 100000
+
+int N;
+int groups[MAX];
+
+void inputData(void) {
+	(void)scanf("%d", &N);
+	for (int i = 0; i < N; ++i) {
+		(void)scanf("%d", groups + i);
+	}
+}
+
+int compInt(const void* ap, const void* bp) {
+	int a = *(int*)ap;
+	int b = *(int*)bp;
+	return (a > b) - (a < b); //오름차순
+}
+
+int main(void) {
+	//(void)freopen("b1715.txt", "r", stdin);
+	inputData();
+
+	qsort(groups, N, sizeof(groups[0]), compInt);
+	int sum = 0;
+	for (int i = 1; i < N; ++i) {
+		 groups[i] = groups[i-1] + groups[i];
+		 sum += groups[i];
+		 qsort(groups+i, N-i, sizeof(groups[0]), compInt);
+	}
+	printf("%d", sum);
+
+
+	return 0;
+}

@@ -1,0 +1,86 @@
+#if 1
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#define MAX 500000
+
+int N, M;
+int cards[MAX];
+int nums[MAX];
+
+int compInt(const void* ap, const void* bp) {
+	int a = *(int*)ap;
+	int b = *(int*)bp;
+	return (a > b) - (a < b); //오름차순
+}
+
+void inputData(void) {
+	(void)scanf("%d", &N);
+	for (int i = 0; i < N; ++i) {
+		(void)scanf("%d", cards + i);
+	}
+	(void)scanf("%d", &M);
+	for (int i = 0; i < M; ++i) {
+		(void)scanf("%d", nums + i);
+	}
+	qsort(cards, N, sizeof(cards[0]), compInt);
+}
+
+void printData(void) {
+	for (int i = 0; i < N; ++i) {
+		printf("%d ", cards[i]);
+	}
+	printf("\n");
+}
+
+int upperBound(int num) {
+	int low = 0;
+	int high = N - 1;
+	int mid = 0;
+	int ret_H = N;
+
+	while (low <= high) {
+		mid = (low + high) / 2;
+
+		if (num < cards[mid]) {
+			high = mid - 1;
+			ret_H = mid;
+		}
+		else {
+			low = mid + 1;
+		}
+	}
+	return ret_H;
+}
+
+int lowerBound(int num) {
+	int low = 0;
+	int high = N - 1;
+	int mid = 0;
+	int ret_L = N;
+
+	while (low <= high) {
+		mid = (low + high) / 2;
+		if (num <= cards[mid]) {
+			high = mid - 1;
+			ret_L = mid;			
+		}
+		else {
+			low = mid + 1;
+		}
+	}
+	return ret_L;
+}
+
+int main(void) {
+	//(void)freopen("b10816.txt", "r", stdin);
+	inputData();
+	//printData();
+
+	for (int i = 0; i < M; ++i) {
+		printf("%d ", upperBound(nums[i]) - lowerBound(nums[i]));
+	}
+	return 0;
+}
+#endif

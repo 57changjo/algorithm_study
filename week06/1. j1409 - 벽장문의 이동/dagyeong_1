@@ -1,0 +1,39 @@
+#if 1
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <limits.h>
+#define MAX (20+2)
+
+int n, k;
+int o1, o2;
+int list[MAX];
+int min = INT_MAX;
+
+void inputData(void) {
+	(void)scanf("%d %d %d %d", &n, &o1, &o2, &k);
+	for (int i = 1; i <= k; ++i) {
+		(void)scanf("%d", list + i);
+	}
+}
+
+void DFS(int i, int o1, int o2, int cnt) {
+	if (i > k) {
+		if (cnt < min) min = cnt;
+		return;
+	}
+	DFS(i + 1, list[i], o2, cnt + abs(o1 - list[i])); // o1과 교환
+	DFS(i + 1, o1, list[i], cnt + abs(o2 - list[i])); // o2과 교환
+}
+
+int main(void) {
+	//(void)freopen("j1409.txt", "r", stdin);
+	inputData();
+
+	DFS(1, o1, o2, 0);
+	printf("%d", min);
+
+	return 0;
+}
+#endif
