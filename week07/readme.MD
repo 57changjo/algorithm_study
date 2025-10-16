@@ -7,9 +7,9 @@
 ---
 
 ## 📂 다룬 문제
-1. 
-2. 
-3. 
+1. 백준 12865 - 평범한 배낭 (https://www.acmicpc.net/problem/12865)
+2. 백준 1149 - RGB거리 (https://www.acmicpc.net/problem/1149)
+3. 백준 2293 - 동전 1 (https://www.acmicpc.net/problem/2293)
 
 ---
 
