@@ -25,7 +25,7 @@ int solve() {
 	for (int i = 1; i <= N; i++) {
 		for (int j = coin[i]; j <= K; j++) {
 			DP[j] += DP[j - coin[i]];
-;		}
+		}
 	}
 	return DP[K];
 }
