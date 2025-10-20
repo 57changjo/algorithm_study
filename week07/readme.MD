@@ -37,6 +37,6 @@
 ## ✅ 다음주 문제 출제자: 홍시은
 - 다음 주 주제: DP
 - 문제 번호 및 링크:
-1. [정올 1220 - 최장 공통 부분서열](https://jungol.co.kr/problem/1220?cursor=OCw5LDU=)
-2. [정올 1749 - 구슬게임](https://jungol.co.kr/problem/1749?cursor=MTAsOSww)
-3. [정올 2993 - 리조트(초등/고등)](https://jungol.co.kr/problem/2993?cursor=MTAsOCww)
+1. [백준 9251 - LCS](https://www.acmicpc.net/problem/9251)
+2. [백준 11048 - 이동하기](https://www.acmicpc.net/problem/11048)
+3. [백준 2098 - 외판원 순회](https://www.acmicpc.net/problem/2098)
