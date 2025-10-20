@@ -39,5 +39,4 @@
 - 문제 번호 및 링크:
 1. [백준 9251 - LCS](https://www.acmicpc.net/problem/9251)
 2. [백준 11048 - 이동하기](https://www.acmicpc.net/problem/11048)
-3. [백준 2098 - 외판원 순회](https://www.acmicpc.net/problem/2098)
-4. [백준 12852 - 1로 만들기 2](https://www.acmicpc.net/problem/12852) - 보너스 문제
+3. [정올 1749 - 구슬게임](https://jungol.co.kr/problem/1749?cursor=MTAsOSww)
