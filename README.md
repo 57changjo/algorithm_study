@@ -3,14 +3,13 @@
 # 📑 알고리즘 스터디
 
 ## 👥 참여 인원
-- [조민창](https://github.com/57changjo)
-- [김다경](https://github.com/dagyeong45)
-- [박민우](https://github.com/learntocodebruh)
-- [조윤서](https://github.com/yoonsuhcho)
-- [최현준](https://github.com/0731chae)
-- [홍시은](https://github.com/pumpkin-9999)
-- [전진](https://github.com/chunin99)
----
+- 조민창 [![GitHub](https://img.shields.io/badge/GitHub-57changjo-181717?style=flat-square&logo=github)](https://github.com/57changjo) [![Solved.ac](http://img.shields.io/badge/solved.ac-cmc507-0076C0?style=flat-square&logo=solved.ac&logoColor=white)](https://solved.ac/profile/cmc507)
+- 김다경 [![GitHub](https://img.shields.io/badge/GitHub-dagyeong45-181717?style=flat-square&logo=github)](https://github.com/dagyeong45) [![Solved.ac](http://img.shields.io/badge/solved.ac-rlaekrud00-0076C0?style=flat-square&logo=solved.ac&logoColor=white)](https://solved.ac/profile/rlaekrud00)
+- 박민우 [![GitHub](https://img.shields.io/badge/GitHub-learntocodebruh-181717?style=flat-square&logo=github)](https://github.com/learntocodebruh) [![Solved.ac](http://img.shields.io/badge/solved.ac-codythecoder-0076C0?style=flat-square&logo=solved.ac&logoColor=white)](https://solved.ac/profile/codythecoder)
+- 조윤서 [![GitHub](https://img.shields.io/badge/GitHub-yoonsuhcho-181717?style=flat-square&logo=github)](https://github.com/yoonsuhcho) [![Solved.ac](http://img.shields.io/badge/solved.ac-yscho789-0076C0?style=flat-square&logo=solved.ac&logoColor=white)](https://solved.ac/profile/yscho789)
+- 최현준 [![GitHub](https://img.shields.io/badge/GitHub-0731chae-181717?style=flat-square&logo=github)](https://github.com/0731chae) [![Solved.ac](http://img.shields.io/badge/solved.ac-0731chae-0076C0?style=flat-square&logo=solved.ac&logoColor=white)](https://solved.ac/profile/0731chae)
+- 홍시은 [![GitHub](https://img.shields.io/badge/GitHub-pumpkin--9999-181717?style=flat-square&logo=github)](https://github.com/pumpkin-9999) [![Solved.ac](http://img.shields.io/badge/solved.ac-hsy062333-0076C0?style=flat-square&logo=solved.ac&logoColor=white)](https://solved.ac/profile/hsy062333)
+- 전진 [![GitHub](https://img.shields.io/badge/GitHub-chunin99-181717?style=flat-square&logo=github)](https://github.com/chunin99) [![Solved.ac](http://img.shields.io/badge/solved.ac-chunin99-0076C0?style=flat-square&logo=solved.ac&logoColor=white)](https://solved.ac/profile/chunin99)
 
 ## 📌 스터디 개요
 - **진행 일정**: 매주 월요일 18:30 ~ 20:30
