@@ -3,13 +3,13 @@
 # 📑 알고리즘 스터디
 
 ## 👥 참여 인원
-- 조민창
-- 김다경
-- 박민우
-- 조윤서
-- 최현준
-- 홍시은
-
+- [조민창](https://github.com/57changjo)
+- [김다경](https://github.com/dagyeong45)
+- [박민우](https://github.com/learntocodebruh)
+- [조윤서](https://github.com/yoonsuhcho)
+- [최현준](https://github.com/0731chae)
+- [홍시은](https://github.com/pumpkin-9999)
+- [전진](https://github.com/chunin99)
 ---
 
 ## 📌 스터디 개요

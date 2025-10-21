@@ -43,8 +43,8 @@ R, G, B 중 R을 선택하면 다음 집은 무조건 G, B중 하나 선택하�
 ---
 
 ## ✅ 다음주 문제 출제자: 홍시은
-- 다음 주 주제: 
+- 다음 주 주제: DP
 - 문제 번호 및 링크:
-1. 
-2. 
-3. 
+1. [백준 9251 - LCS](https://www.acmicpc.net/problem/9251)
+2. [백준 11048 - 이동하기](https://www.acmicpc.net/problem/11048)
+3. [정올 1749 - 구슬게임](https://jungol.co.kr/problem/1749?cursor=MTAsOSww)
