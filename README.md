@@ -16,8 +16,8 @@
 ## 📌 스터디 개요
 - **진행 일정**: 매주 월요일 18:30 ~ 20:30
 - **플랫폼**: 백준, 정올
-- **사용 언어**: C++
-- **진행 기간**: 2025년 9월 ~ 
+- **사용 언어**: [![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)](https://isocpp.org/)
+- **진행 기간**: [![Period](https://img.shields.io/badge/Since-2025.09-brightgreen?style=flat)](./)
 - **목적**
   1. 알고리즘/자료구조 심화 학습
   2. 협업 능력 및 코드 리뷰 경험 축적
