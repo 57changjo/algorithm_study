@@ -7,17 +7,17 @@
 int dp[1001][1001];
 std::string str1, str2;
 
-void inputData() {
+void inputData(void) {
     std::cin >> str1 >> str2;
     str1 = " " + str1;
     str2 = " " + str2;
 }
 
-void printData() {
+void printData(void) {
     std::cout << str1 << '\n' << str2 << '\n';
 }
 
-void solve() {
+void solve(void) {
     int len1 = str1.length() - 1;
     int len2 = str2.length() - 1;
 
@@ -35,7 +35,7 @@ void solve() {
     std::cout << dp[len1][len2];
 }
 
-int main() {
+int main(void) {
     std::ios::sync_with_stdio(false);
     std::cin.tie(NULL);
 
