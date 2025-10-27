@@ -41,6 +41,7 @@
 
 - 다음 주 주제: 
 - 문제 번호 및 링크:
-1. 
-2.
-3.
+1. [백준 11399 - ATM](https://www.acmicpc.net/problem/11399)
+2. [백준 10162 - 전자레인지](https://www.acmicpc.net/problem/10162)
+3. [백준 14891 - 톱니바퀴](https://www.acmicpc.net/problem/14891)
+4. [백준 2961 - 도영이가 만든 맛있는 음식](https://www.acmicpc.net/problem/2961)
