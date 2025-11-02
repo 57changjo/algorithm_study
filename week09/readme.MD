@@ -54,5 +54,7 @@
   3. 문제 3: [백준 15486 - 퇴사2]https://www.acmicpc.net/problem/15486
 
 
-......https://www.acmicpc.net/problem/16236 아기상어
-......https://www.acmicpc.net/problem/2163  초콜릿자르기
+https://www.acmicpc.net/problem/16236 아기상어
+
+
+https://www.acmicpc.net/problem/2163  초콜릿자르기
