@@ -49,6 +49,8 @@
 ## ✅ 다음주 문제 출제자: 조윤서
 - 다음 주 주제: (예: 그래프 탐색, DP 등)
 - 문제 번호 및 링크:
-  1. 문제 1: [백준 문제번호 - 문제명](문제링크)
+  1. 문제 1: [백준 11053 - 가장 긴 증가하는 부분 수열]https://www.acmicpc.net/problem/11053
   2. 문제 2: [백준 2579 - 계단오르기]https://www.acmicpc.net/problem/2579
   3. 문제 3: [백준 15486 - 퇴사2]https://www.acmicpc.net/problem/15486
+......https://www.acmicpc.net/problem/16236 아기상어
+......https://www.acmicpc.net/problem/2163  초콜릿자르기
