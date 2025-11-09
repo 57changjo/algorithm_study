@@ -9,12 +9,12 @@ using namespace std;
 
 #define MAX_N (1500000+2)
 
-long T[MAX_N];
-long P[MAX_N];
-long dp[MAX_N];
-long E_date[MAX_N];
+int T[MAX_N];
+int P[MAX_N];
+int dp[MAX_N];
+int E_date[MAX_N];
 
-long N;
+int N;
 
 
 void solve() {
