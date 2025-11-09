@@ -1,4 +1,4 @@
-// 미완 - 수정 예정
+// b16236 - 아기상어
 #if 01
 #include <iostream>
 #include <vector>
@@ -19,33 +19,55 @@ struct Result {
     int time, r, c;
 };
 
-Result BSF(int sR, int sC) {
-    queue < Node> q;
-	q.push({ sR, sC });
-	visited[sR][sC] = 1;
+Result BFS(int sR, int sC) {
+    queue<Node> q;
+    q.push({ sR, sC });
+    visited.assign(N, vector<int>(N, -1));
+    visited[sR][sC] = 0;
+
+    // 좌표쌍들을 여러 개 저장할 수 있는 -> 물고기 행, 열
+    vector<pair<int, int>> fishList;
 
     while (!q.empty()) {
-        Node curr = q.front();
-        q.pop();
+        int qSize = q.size(); // 현재 거리(level)의 노드 개수
+        fishList.clear();
 
-        for (int dir = 0; dir < 4; dir++) {
-            nR = curr.r + dr[dir];
-            nC = curr.c + dc[dir];
+        // BFS를 '거리 단위로 끊어서 처리하는 장치'
+        for (int i = 0; i < qSize; i++) {
+            Node curr = q.front();
+            q.pop();
 
-            if (nR < 0 || nR >= N || nC < 0 || nC >= N)
-                continue;
-            if (visited[nR][nC] != 0)
-                continue;
-			if (sea[nR][nC] > shark)
-				continue;
-            if (sea[nR][nC] != 0 && sea[nR][nC] < shark)
-                return { visited[curr.r][curr.c], nR, nC }; // 먹을 수 있는 물고기 발견
+            for (int dir = 0; dir < 4; dir++) {
+                nR = curr.r + dr[dir];
+                nC = curr.c + dc[dir];
 
-            visited[nR][nC] = visited[curr.r][curr.c] + 1;
-            q.push({ nR, nC });
-		}
+                if (nR < 0 || nR >= N || nC < 0 || nC >= N)
+                    continue;
+                if (visited[nR][nC] != -1)
+                    continue;
+                if (sea[nR][nC] > shark)
+                    continue;
+
+                visited[nR][nC] = visited[curr.r][curr.c] + 1;
+
+                // 먹을 수 있는 물고기 발견
+                if (sea[nR][nC] != 0 && sea[nR][nC] < shark)
+                    fishList.push_back({ nR, nC });
+                else
+                    q.push({ nR, nC });
+            }
+        }
+
+        // 현재 거리(level)에서 먹을 수 있는 물고기를 찾았다면
+        if (!fishList.empty()) {
+            sort(fishList.begin(), fishList.end());
+            int dist = visited[fishList[0].first][fishList[0].second];
+            return { dist, fishList[0].first, fishList[0].second };
+        }
     }
-    return { 0, -1, -1 }; // 더 이상 먹을 수 있는 물고기가 없음
+
+    // 더 이상 먹을 수 있는 물고기가 없음
+    return { 0, -1, -1 };
 }
 
 int main() {
@@ -54,7 +76,6 @@ int main() {
 
     cin >> N;
     sea.assign(N, vector<int>(N, 0));
-    visited.assign(N, vector<int>(N, 0));
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             cin >> sea[i][j];
@@ -67,22 +88,22 @@ int main() {
     }
 
     // 아기상어가 물고기를 찾는 과정 BFS 반복
-	int totalTime = 0;
+    int totalTime = 0;
     while (1) {
-        visited.assign(N, vector<int>(N, 0));
-        Result res = BSF(sR, sC);
-        int time = res.time;
-        if (time == 0)
+        Result res = BFS(sR, sC);
+        if (res.time == 0)
             break; // 더 이상 먹을 수 있는 물고기가 없음
-        totalTime += time;
+        totalTime += res.time;
+
         meal++;
         if (meal == shark) {
             shark++;
             meal = 0;
-		}
+        }
+
         sR = res.r;
         sC = res.c;
-		sea[sR][sC] = 0;
+        sea[sR][sC] = 0;
     }
 
     cout << totalTime;
