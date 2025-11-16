@@ -8,8 +8,8 @@
 
 ## 📂 다룬 문제
 1. [백준 1446 - 지름길](https://www.acmicpc.net/problem/1446)
-2. [백준 2110 - 문제명](https://www.acmicpc.net/problem/2110)
-3. [백준 2458 - 문제명](https://www.acmicpc.net/problem/2458)
+2. [백준 2110 - 공유기 설치](https://www.acmicpc.net/problem/2110)
+3. [백준 2458 - 키 순서](https://www.acmicpc.net/problem/2458)
 
 ---
 
