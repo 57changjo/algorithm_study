@@ -25,7 +25,7 @@ int main() {
     int N, D;
     cin >> N >> D;
 
-    vector<pair<int,int>> shortCut[10001]; // [시작점] → (도착점, 거리)
+    vector<pair<int,int>> shortCut[10001]; // 시작 하고 도착점, 거리
 
     for (int i = 0; i < N; i++) {
         int s, e, l;
