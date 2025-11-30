@@ -55,8 +55,10 @@ int rain() {
 					cnt += j - start - 1;
 					start = j;
 				}
+			else{
 				flag = open;
 				start = j;
+				}
 			}
 		}
 	}
