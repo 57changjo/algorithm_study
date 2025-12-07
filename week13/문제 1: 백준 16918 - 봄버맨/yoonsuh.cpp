@@ -34,15 +34,15 @@ int main() {
     for (int i = 0; i < R; i++) cin >> board[i];
 
     if (N == 1) {
-        // 초기 상태 그대로 출력
+        // 처음상태
     } else if (N % 2 == 0) {
         // 모든 칸 폭탄
         for (int i = 0; i < R; i++) board[i] = string(C, 'O');
     } else if (N % 4 == 3) {
-        // 3초 후 (첫 폭발)
+        // 3초 후 처음폭발
         board = explode(board);
     } else if (N % 4 == 1) {
-        // 5초 후 (두 번째 폭발)
+        // 5초 후 두번째 bomb
         board = explode(explode(board));
     }
 
