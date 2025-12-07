@@ -31,7 +31,7 @@ int main() {
 
         for (auto &h : home) {
             int hx = h.first, hy = h.second;
-            int dist = 1e9;
+            int dist = 1000000;
             for (int i = 0; i < c; i++) {
                 if (pick[i]) {
                     int cx = chick[i].first, cy = chick[i].second;
