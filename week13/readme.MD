@@ -22,18 +22,85 @@
 
 ## 📝 리뷰 요약 (홍시은)
 ### 문제 1: (문제명)
-- 풀이 접근:
-- 주요 코드/아이디어:
+- 풀이 접근: 시뮬레이션, 패턴을 찾으면 된다.
+- 주요 코드/아이디어: 
+t = 0 제일 처음에 일부 칸에 폭탄을 설치한다
+t = 1 아무것도 안 함 (초기 상태 동일)
+t = 2 폭탄이 설치되어 있지 않은 칸에 폭탄을 설치함
+t = 3 제일 처음에 설치된 폭탄이 모두 폭발함
+t = 4 또 전체 폭탄 설치
+t = 5 t = 2 일 때 설치한 폭탄 폭발
+...
+짝수 초 모두 폭탄 설치되었을 때
+홀수 초 %4 == 3일 때와 %4 == 1일 때의 경우로 나눠진다. (폭탄 설치 후 3초 후 폭발하므로)
+char map_start[SIZE][SIZE];
+char map_after1[SIZE][SIZE];
+char map_after2[SIZE][SIZE];
+을 세 개를 써서 한 번 터졌을 때, 두 번 터졌을 때를 저장한다.
+민우님 풀이에서 조금 보완을 하자면
+for (int k = 0; k < 4; k++) {
+int ny = i + dy[k];
+int nx = j + dx[k];
+}
+와 같이 주변을 접근하는 것이 좋겠다.
+
+c++에서는 함수 파라미터에 배열을 넣으면 메모리를 전체 복사해온다. 만약에 맵이 너무 커지면 시간이 많이 소요된다.
+따라서 다음과 같이 사용하길 권장한다. 그러면 연산에 필요한 부분이 있으면 그 부분만 가져오기 때문에 효율적이다. (포인터처럼 쓰는 느낌)
+vector<string> explode(vector<string>& currentGrid)
+
++ 재귀 풀이
+bomb_org, bomb_cp를 사용해서 터트리고 업데이트하는 걸 반복한다.
+enum에서 한 글자라서 char도 사용가능했다.
+
 - 리뷰 포인트:
+앞으로도 함수화를 습관화하자
+시뮬레이션 문제에서 패턴을 잘 찾아보자
+
 
 ### 문제 2: (문제명)
-- 풀이 접근:
+- 풀이 접근: DFS를 곁들인 시뮬레이션
 - 주요 코드/아이디어:
+맵에다가 집이랑 치킨집을 박아버리면 머리가 터져버린다. (못 푼다)
+주머니에서 꺼내서 쓰는 방식으로 접근하자. (벡터)
+dataInput에서 읽어올 때부터 집, 치킨집 등을 벡터에 저장한다.
+
+DFS + 백트래킹을 통해서 selected에 모든 경우의 M개의 치킨집을 저장한다.
+이때, push_back(), pop_back()을 사용하여 모든 조합을 선택할 수 있다.
+for (int i = idx; i < chickens.size(); i++) {
+        selected.push_back(chickens[i]);
+
+        DFS(i + 1, count + 1);
+
+        // 복구
+        selected.pop_back();
+    }
+이에 따라 모든 selected 경우에 대해 거리를 계산하면서 minimum을 갱신하여 답을 찾는다.
+
+auto라는 것을 통해 문법을 생각하지 않을 수 있다. &를 붙인 건 c를 reference로 쓰겠다는 거다.
+또한 벡터를 사용해서 for문을 사용할 때 하나씩 꺼내서 쓸 수 있다.
+for (auto& c : selected) {
+            int d = getDist(h, c);
+            if (d < minDist) {
+                minDist = d;
+            }
+        }
+
++ prev_permutation 함수를 사용하여 조합 찾기 <algorithm> 헤더 파일
+fill(select.begin(), select.begin() + M, true); // 앞에서부터 M개 true, 나머지(치킨집 수) false인 벡터 생성 후
+select 벡터에 대해서 prev_permutation(select.begin(), select.end())를 통해서 M개의 치킨집을 고를 수 있다.
+prev_permutation의 return값은 bool 타입, 기본은 true, 이전 순열이 없을 때 false를 반환
+
 - 리뷰 포인트:
+벡터를 사용한 for문 사용법
+조합 구하는 방법
+1. DFS
+2. c++에는 combination 함수가 있다. <algorithm>
+3. 비트 연산
+
 
 ### 문제 3: (문제명)
-- 풀이 접근:
-- 주요 코드/아이디어:
+- 풀이 접근: 비문학 읽기 능력이 필요한 시뮬레이션
+- 주요 코드/아이디어: 
 - 리뷰 포인트:
 
 ---
